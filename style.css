@@ -536,6 +536,28 @@ body.nav-active {
   margin-block: 10px 30px;
 }
 
+.hero-subtitle {
+  overflow: hidden;
+  /* font-family: shadows into light; */
+  display: flex;
+  align-items: center;
+  /* margin-right: 20em; */
+  font-weight: 800;
+  
+  white-space: nowrap;
+  width: 0;
+  animation: typing infinite alternate;
+  animation-duration: 3s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode:forwards;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 100%; } 
+  100% { width: 100%; } 
+}
+
 .hero-banner {
   border-radius: var(--blob-radius);
   overflow: hidden;
