@@ -1168,50 +1168,103 @@ body.nav-active {
   }
 }
 
+/* modifies code for slider animation */
+.top-header {
 
-.site-header {  background-color: #ffffff;
+            background-color: #ffffff;
+
             padding: 20px 0;
+
             overflow: hidden;
+
             white-space: nowrap;
+
             position: relative;
+
         }
-        .animated-text {  display: inline-block;
+
+        .moving-text {
+
+            display: inline-block;
+
             font-size: 36px;
+
             font-weight: bold;
+
             color: #000000;
-            animation: text-scroll 10s linear infinite;
+
+            animation: slideText 10s linear infinite;
+
         }
-        @keyframes text-scroll {  0% {
+
+        @keyframes slideText {
+
+            0% {
+
                 transform: translateX(100%);
+
             }
+
             100% {
+
                 transform: translateX(-100%);
+
             }
+
         }
-        .content-area {  background-color: #fffbe6;
+
+        .main-content {
+
+            background-color: #fffbe6;
+
             padding: 50px 20px;
+
             text-align: center;
+
         }
-        .content-area h1 {
+
+        .main-content h1 {
+
             font-size: 36px;
+
             font-weight: bold;
+
             color: #000000;
+
         }
-        .question-container {  background-color: #ffffff;
+
+        .query-box {
+
+            background-color: #ffffff;
+
             border-radius: 15px;
+
             padding: 20px;
+
             margin: 20px auto;
+
             max-width: 600px;
+
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
         }
-        .question-container h2 {
+
+        .query-box h2 {
+
             font-size: 24px;
+
             font-weight: bold;
+
             color: #000000;
+
         }
-        .question-container p {
+
+        .query-box p {
+
             font-size: 16px;
+
             color: #000000;
+
         }
 
 
